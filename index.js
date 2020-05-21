@@ -35,6 +35,7 @@ const swaggerOptions = {
             },
             servers: ["http://localhost:8081"]
         }
+    
     },
     apis: ["index.js"]
 };
@@ -43,7 +44,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 //Define request response in root URL (/)
 app.get('/', function (req, res) {
-    res.send('Hello World!')
+    res.send('Hello world!')
 })
 //Launch listening server on port 8081
 app.listen(8081, function () {
